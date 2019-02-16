@@ -1,0 +1,48 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\date{\today}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+%正文区 
+\begin{document}
+	\section{表格}
+	使用  tabular 生成表格
+	
+	使用 hline 产生表格横线  竖线在定义时添加
+	
+	可以在定义列数的括号中添加 由p指定的列宽度  超过宽度自动换行
+	
+	好像是编译器问题，一直不会自动换行。。。。
+	
+	使用   cmd  的 texdoc booktab 、 texdoc longtab 、 texdoc tabu 查看相关手册
+\\
+\\
+\begin{center}
+	\begin{tabular}{l c c c |p{1.5cm}|}% 五列表格  左对齐   居中对齐*3 右对齐
+		姓名 &1 &2 &3 &4\\
+		dk   &99 &99 &99 &99999999999999\\
+	\end{tabular}
+
+	\begin{tabular}{l |c |c |c |p{0.5cm}|}% 五列表格  左对齐   居中对齐*3 右对齐
+		姓名 &1 &2 &3 &4\\
+		\hline
+		姓名 &1 &2 &3 &4\\
+		\hline
+		dk   &99 &99 &99 &99999999999\\
+	\end{tabular}
+
+	\begin{tabular}{|l| c| c| c| r|}% 五列表格  左对齐   居中对齐*3 右对齐
+		\hline
+		姓名 &1 &2 &3 &4\\
+		\hline
+		姓名 &1 &2 &3 &4\\
+		\hline
+		dk   &99 &99 &99 &99\\
+		\hline
+	\end{tabular}
+\end{center}
+\end{document}
+	
+
+	

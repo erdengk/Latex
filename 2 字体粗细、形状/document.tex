@@ -1,0 +1,78 @@
+%导言区
+\documentclass[UTF8]{ctexart}
+\usepackage{ctex}
+\date{\today}
+
+%正文区 
+\begin{document}
+	字体族设置(罗马字体、无衬线字体、打字机字体)
+	
+	斜杠 + textrm   
+	
+	\textrm{Roman Fameily}
+	\textsf{Sans Serif}
+	\texttt{Typewriter Fameily}	
+	
+	也可以通过声明来声明字体
+	
+	{\rmfamily Roman Fameily}
+	{\sffamily Sans Serif}
+	{\ttfamily Typewriter Fameily}
+	
+	规定字体
+	
+	{\rmfamily
+		dadadadadadadadada
+	}	
+	{\sffamily
+		dadadadadadadadada
+	}
+	{\ttfamily
+		dadadadadadadadada
+	}
+
+	字体系列设置 粗细、宽度
+	
+	\textmd{Medium Series}
+	\textbf{Bold face Series}
+	{\mdseries Medium Series}
+	{\bfseries Medium Series}
+	
+	字体形状  直立、斜体、伪斜体、小型大写
+	
+	\textup{Upright Shape}
+	\textit{Italic Shape}
+	\textsl{Slanted Shape}
+	\textsc{Small Caps Shape}
+	
+	中文字体      要加 ctex宏包
+	
+	{\songti 宋体} \quad {\heiti 黑体}\quad
+	{\fangsong 仿宋} \quad {\kaishu 楷书}
+	
+	中文字体的 \textbf{粗体} 与 \textit{斜体}
+	
+	字体大小
+	
+	{\tiny Hello World!}\\
+	{\scriptsize Hello World!}\\
+	{\footnotesize Hello World!}\\
+	{\small Hello World!}\\
+	{\normalsize Hello World!}\\
+	{\large Hello World!}\\
+	{\Large Hello World!}\\
+	{\LARGE Hello World!}\\
+	{\huge Hello World!}\\
+	{\Huge Hello World!}\\
+	
+	可以在 documentclass [] 中添加 [10pt 11pt 12pt]来修改字体大小 
+	
+	对于中文 cmd 中 输入 texdoc ctex 打开帮助文件  第5节 排版格式设定
+	\\
+	\zihao{5} 你好！\\
+	\\  \zihao{-5} 你好！
+	
+\end{document}
+	
+
+	

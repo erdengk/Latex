@@ -1,0 +1,30 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\date{\today}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+%正文区 
+\begin{document}
+	\section{添加图片}
+	导言区：\ usepackage {graphicx}
+	
+	语法： \ includegraphic [<选项>] {<文件名>}
+	
+	搜索路径:  使用 \ graphicspath {{文件夹名/ } }
+	
+	\LaTeX{}中的插图:
+	
+\begin{center}
+	\includegraphics[scale=0.3]{fu}\\
+	\includegraphics[height=3cm]{fu}\\
+	\includegraphics[width=5cm]{fu}\\
+	\includegraphics[width=5cm,angle=90]{fu}\\
+	
+	关于其他图片命令   在cmd中输入  texdoc graphicx 查看
+\end{center}
+
+\end{document}
+	
+
+	

@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}简介}{2}
+\contentsline {section}{\numberline {2}行内公式}{2}
+\contentsline {subsection}{\numberline {2.1}美元符号}{2}
+\contentsline {subsection}{\numberline {2.2}小括号}{2}
+\contentsline {subsection}{\numberline {2.3}math环境}{2}
+\contentsline {section}{\numberline {3}上下标}{2}
+\contentsline {subsection}{\numberline {3.1}上标}{2}
+\contentsline {subsection}{\numberline {3.2}下标}{2}
+\contentsline {section}{\numberline {4}希腊字母}{2}
+\contentsline {section}{\numberline {5}数学函数}{2}
+\contentsline {section}{\numberline {6}行间公式}{2}

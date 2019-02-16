@@ -1,0 +1,56 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\date{\today}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+%正文区 
+\begin{document}
+	\section{浮动体}
+	浮动体环境 图片 begin {figure}
+		
+	表格 begin {table}
+	
+	caption 添加标题  图片和表格的编号是相互独立的
+	
+	htbp   +  []  为允许各个位置
+	
+	在\LaTeX{}中的表格如表\ref{c}
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{l |c |c |c |p{0.5cm}|}% 五列表格  左对齐   居中对齐*3 右对齐
+			姓名 &1 &2 &3 &4\\
+			\hline
+			姓名 &1 &2 &3 &4\\
+			\hline
+			dk   &99 &99 &99 &999\\
+		\end{tabular}
+		\caption{成绩表}\label{c}
+	\end{table}
+	
+	实现交叉引用如下代码
+	
+	集五福的使用图见图\ref{fig-fuu}。
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[height=3cm]{fu}\\
+		\caption{集福}\label{fig-fuu}
+	\end{figure}
+	
+		实现交叉引用如下代码
+	
+	集五福的使用图见图\ref{fig-fuuu}。
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[height=3cm]{fu}\\
+		\caption{集福}\label{fig-fuuu}
+	\end{figure}
+
+
+		
+	
+	
+	\end{document}
+	
+
+	

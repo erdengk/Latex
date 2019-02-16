@@ -1,0 +1,90 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\date{\today}
+
+%正文区 
+\begin{document}
+	\section{矩阵}
+	需要引入 amsmath 包
+	\[
+	\begin{matrix}
+		0 & 1\\
+		1　& 9 
+	\end{matrix} \qquad 
+	\begin{pmatrix}
+	0 & 1\\
+	1　& 9 
+	\end{pmatrix}\qquad
+	\begin{bmatrix}
+	0 & 1\\
+	1　& 9 
+	\end{bmatrix}\qquad
+	\begin{Bmatrix}
+	0 & 1\\
+	1　& 9 
+	\end{Bmatrix}\qquad
+	\begin{vmatrix}
+	0 & 1\\
+	1　& 9 
+	\end{vmatrix}\qquad
+	\begin{Vmatrix}
+		0 & 1\\
+		1　& 9 
+	\end{Vmatrix}\qquad
+	\]
+	
+	也可以使用上下标，矩阵内不可以有空格。
+	\[
+	A = \begin{bmatrix}
+		a_{11}^2 & a_{12} ^2& a_{13}^2 \\
+		0 & a_{22}^2 & a_{23}^2 \\
+		0 & 0 & a_{24}^2 \\
+	\end{bmatrix}
+	\]
+	
+	省略号 dots 、 vdots 、 ddots 。n x n 可以用 n 斜杠 + times n实现
+	
+	\[
+	A = \begin{bmatrix}
+	a_{11}^2 & \dots & a_{1n}^2 \\
+	 & \ddots & \vdots \\
+	0 &  & a_{nn} \\
+	\end{bmatrix}_{n \times n}
+	\]
+	
+	分块矩阵的实现
+	
+		\[
+	A = \begin{bmatrix}
+	\begin{bmatrix}
+	a_{11}^2 & \dots & a_{1n}^2 \\
+	& \ddots & \vdots \\
+	0 &  & a_{nn} \\
+	\end{bmatrix}_{n \times n} & \dots & a_{1n}^2 \\
+	& \ddots & \vdots \\
+	0 &  & a_{nn} \\
+	\end{bmatrix}_{n \times n}
+	\]
+	
+	行内矩阵的实现
+	\begin{math}
+	\left(
+		\begin{smallmatrix}
+			0 & 1\\
+			1　& 9 
+		\end{smallmatrix}
+	\right)%手动加上左右括号
+	\end{math}
+
+	
+	还有三角矩阵、数字分块矩阵、数组排版超复杂矩阵详情见视频(4min处)。
+	
+	
+	
+	
+\end{document}
+	
+
+	

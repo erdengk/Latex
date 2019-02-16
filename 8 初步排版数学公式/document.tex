@@ -1,0 +1,77 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\date{\today}
+
+%正文区 
+\begin{document}
+	\section{简介}
+	\section{行内公式}
+	\subsection{美元符号}
+	$a+b = b+a$
+	\subsection{小括号}
+	\(a+b=b+a\)
+	\subsection{math环境}
+		\begin{math}
+			a*b=b*a
+		\end{math}
+	\section{上下标}
+	\subsection{上标}
+	$x^{20}+2x=0$
+	
+	$x^{x^{20}+2x=0}+2x=0$
+	\subsection{下标}
+	$a_0, a_1$
+	
+	$a_0 , a_1, ... ,a_{100} $
+	\section{希腊字母}
+	\section{数学函数}
+	$\log$
+	$\sin$
+	$\cos$
+	$\arcsin$
+	$\ln$
+	
+	$\sin^2 x+\cos^2 x =1$
+	
+	$\log^2 x+\ln^2 x =???$
+	
+	$y=log_2 x$
+	
+	$\sin^{-1}x$
+	
+	sqrt 用于排版根式
+	
+	$\sqrt{2}$
+	
+	$\sqrt[4]{2}$
+	
+	\section{分式}
+	$\frac{1}{2}$
+	
+	$\frac{1}{1+\frac{1}{x}}$
+	
+	\section{行间公式}
+	\subsection{美元符号}
+	双\$ 符号 的公式会自动化居中
+	$$a+b=b+a$$
+	
+	\subsection{自动编号的equation环境}
+	假设公式如\ref{lin}
+	\begin{equation}\label{lin}
+		a+b+c=0
+	\end{equation}
+	\subsection{美元符号}
+	
+	\subsection{不编号的equation*环境}
+	此环境需要 添加 amsmath包
+	\begin{equation*}
+	a+b+c=0
+	\end{equation*}
+	\subsection{美元符号}
+	
+\end{document}
+	
+
+	

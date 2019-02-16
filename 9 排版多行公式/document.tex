@@ -1,0 +1,59 @@
+%导言区
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\date{\today}
+
+%正文区 
+\begin{document}
+	\section{排版多行公式}
+	gather 环境 带编号
+	
+	gather* 环境   不带编号
+	
+	在 双斜杠 前使用  notag 阻止编号
+	
+	注意添加  amsmath 和  amssymb 宏包
+	\begin{gather}
+		a+b \\
+		b+a \\
+		b \notag 
+	\end{gather}
+	
+	使用 align 和 align* 环境 进行指定对齐
+	
+	and符号的位置即为对齐位置
+	
+	\begin{align}
+		y & = t+1 \\
+		y & = t 
+	\end{align}
+	
+	对于分段函数的排版 使用 cases 环境排版
+	
+	使用 and符号分割为前后两部分
+	
+	\begin{equation}
+		D(x) = \begin{cases}
+			1,& \text{如果} x \in \mathbb{Q} ;\\
+			0,& \text{如果} x\ in \mathbb{R} ; 
+		\end{cases}
+	\end{equation}
+	
+	
+	\begin{equation*}
+	D(x) = \begin{cases}
+	1,& \text{如果} x \in \mathbb{Q} ;\\
+	0,& \text{如果} x\ in \mathbb{R} ; 
+	\end{cases}
+	\end{equation*}
+	
+	
+	
+	
+	
+\end{document}
+	
+
+	
